@@ -1,0 +1,72 @@
+<div class="grid">
+  <div class="card" *ngFor="let user of users">
+    <div [routerLink]="['./', user.id]">
+      <h5 class="card-header">
+        {{ user.fullName }}
+        <img
+          *ngIf="user.selected"
+          [src]="'assets/img/checkmark.png'"
+          width="24px"
+          height="24px"
+        />
+      </h5>
+      <div class="card-body">
+        <div class="row">
+          <div>Id:</div>
+          <div>{{ user.id }}</div>
+        </div>
+        <div class="row">
+          <div class="label">First Name:</div>
+          <div class="data">{{ user.first_name }}</div>
+        </div>
+        <div class="row">
+          <div class="label">Last Name:</div>
+          <div class="data">{{ user.last_name }}</div>
+        </div>
+        <div class="row">
+          <div class="label">email:</div>
+          <div class="data">{{ user.email }}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- <div class="card-group row">
+  <div class="col-xl-4 col-md-6 mb-3" *ngFor="let user of users">
+    <summary [routerLink]="['./', user.id]" class="card bg-light mb-3">
+      <h5 class="card-header">
+        {{ user.fullName }}
+        <img
+          *ngIf="user.selected"
+          [src]="'assets/img/checkmark.png'"
+          width="24px"
+          height="24px"
+        />
+      </h5>
+      <div class="card-body">
+        <div class="row">
+          <div class="col-5">מזהה:</div>
+          <div class="col-7">{{ user.id }}</div>
+        </div>
+        <div class="row">
+          <div class="col-5">כתובת:</div>
+          <div class="col-7">{{ user.first_name }}</div>
+        </div>
+        <div class="row">
+          <div class="col-5">טלפון:</div>
+          <div class="col-7">{{ user.last_name }}</div>
+        </div>
+        <div class="row">
+          <div class="col-5">דוא"ל:</div>
+          <div class="col-7" dir="ltr">{{ user.email }}</div>
+        </div>
+      </div>
+    </summary>
+  </div>
+</div> -->
+<!-- id: 1
+email: "george.bluth@reqres.in"
+first_name: "George"
+last_name: "Bluth"
+avatar: "https://s3.amazonaws.com/uifaces/faces/twitter/calebogden/128.jpg" -->
