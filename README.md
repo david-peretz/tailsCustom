@@ -1,6 +1,6 @@
-הקוד רספונסיבי CUSTOM 
+1. הקוד רספונסיבי CUSTOM 
 
-יש לשים לב 
+2. יש לשים לב 
 שהקוד עובד עם 
 ObservableStore 
 
@@ -11,15 +11,15 @@ localhost:4200
 
 
 
-עיקר הקוד ב   EntitiesComponent
+3. עיקר הקוד ב   EntitiesComponent
 שבו יש האזנה לניווט 
 
-יש לשים לב שהדאטה מסתכרן בין ה 
+4. יש לשים לב שהדאטה מסתכרן בין ה 
 USERSTORESERVICE
 שמתעדכן באמצעות  
  await this.usersService.fetch();
 
-הקוד עובד עם 
+5.הקוד עובד עם 
 async
 await 
 
